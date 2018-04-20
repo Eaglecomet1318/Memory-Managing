@@ -1,5 +1,5 @@
 /*
-FILENAME: pr2.cpp
+FILENAME: Memory.cpp
 AUTHOR:   Venkata Ponakala
 PROJECT GOAL: To simulate the management of a memory sytem by 'feeding' several values that act as processes into a main memory simulation and find the total execution time of all the processes while obeying the memory constraints. A solution must also be found to more efficiently ru all the processes.
 */
@@ -13,9 +13,9 @@ PROJECT GOAL: To simulate the management of a memory sytem by 'feeding' several 
 using namespace std;
 
 struct process {
-   int pid; // pid
-   int pagus; // number of pages of process
-   int time; // time required for process
+   int pid; // process id
+   int page; // number of pages of process
+   int time; // time required for process, assumed to be seconds
 };
 
 int main() 
